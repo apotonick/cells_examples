@@ -1,0 +1,9 @@
+<hr>
+
+<h2><%= @post.title %>
+  <br><span>Posted on <%= @post.created_at.to_s(:short) %></span>
+</h2>
+<p><%= @post.body[0..66] %>...</p>
+
+<p class="more"><%= link_to "Read more...", :action => :read, :id => @post.id %></p>
+<hr>

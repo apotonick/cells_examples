@@ -1,0 +1,14 @@
+<h1>Welcome to my blog!</h1>
+
+This is an example blog application for demonstration Rails Cells. Hey, you guys kept asking us for examples. Here they are, for your convenience.
+
+
+<%= render_cell :post, :front_teaser %>
+
+Click <%= link_to "here", :action => :all %> to see all posts.
+Currently our blog archive has <%= Post.find(:all).size %> posts, that's a lot of interesting stuff.
+
+
+<%= render_cell :post, :list_categories %>
+
+<%= render_cell :newsletter, :form %>
