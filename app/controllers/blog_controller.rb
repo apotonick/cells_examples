@@ -1,4 +1,5 @@
-class BlogController < ApplicationController
+class BlogController < ActionController::Base
+
   def index
   end
 
