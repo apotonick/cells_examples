@@ -12,3 +12,6 @@ Currently our blog archive has <%= Post.find(:all).size %> posts, that's a lot o
 <%= render_cell :post, :list_categories %>
 
 <%= render_cell :newsletter, :form %>
+
+<hr>
+<%= render_cell :debug, :show_cache_time %>
