@@ -1,4 +1,4 @@
-<p>Currently, we have these categories:
+<p>Currently, we have these <%= t(:categories) %>:
 <ul>
   <% @categories.each do |cat| %>
     <li><%= link_to cat.name, :action => :cat, :id => cat.id %></li>
