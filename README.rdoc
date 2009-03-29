@@ -1,0 +1,19 @@
+== Installation
+
+  git clone git://github.com/apotonick/cells_examples.git
+  cd cells_examples
+  script/plugin install git://github.com/apotonick/cells.git
+
+Then install a valid <tt>config/database.yml</tt> and fire
+
+  script/server
+
+Browse to <tt>localhost:3000/blog</tt> and have fun.
+
+== Contribute!
+
+If you think these examples are useless, feel free to add more descriptive stuff and send
+us a pull request. We're looking forward to your work.
+
+Every contribution pulled into master will be rewarded with a beer at a Ruby/Rails 
+event (I PAY!).
