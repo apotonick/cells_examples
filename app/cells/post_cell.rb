@@ -15,4 +15,9 @@ class PostCell < Cell::Base
     nil
   end
   
+  cache :count_posts
+  def count_posts
+    @count = Post.find(:all).size
+    nil
+  end
 end
