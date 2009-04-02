@@ -6,7 +6,8 @@ This is an example blog application for demonstration Rails Cells. Hey, you guys
 <%= render_cell :post, :front_teaser %>
 
 Click <%= link_to "here", :action => :all %> to see all posts.
-Currently our blog archive has <%= Post.find(:all).size %> posts, that's a lot of interesting stuff.
+
+<%= render_cell :post, :count_posts %>
 
 
 <%= render_cell :post, :list_categories %>
