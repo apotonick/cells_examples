@@ -3,12 +3,9 @@
   git clone git://github.com/apotonick/cells_examples.git
   cd cells_examples
   script/plugin install git://github.com/apotonick/cells.git
-
-Then install a valid <tt>config/database.yml</tt> and fire
-
   script/server
 
-Browse to <tt>localhost:3000/blog</tt> and have fun.
+Browse to <tt>localhost:3000</tt> and have fun.
 
 == Contribute!
 
