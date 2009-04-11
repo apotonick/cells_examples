@@ -1,4 +1,4 @@
-class BlogController < ActionController::Base
+class BlogController < ApplicationController
   cache_sweeper :posts_sweeper
   
   def index
