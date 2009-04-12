@@ -5,6 +5,7 @@ class VideoCell < Cell::Base
   def recent
     @header = @opts[:header]
     @videos = Video.recent
+    nil
   end
 
 end
