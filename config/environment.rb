@@ -21,4 +21,6 @@ Rails::Initializer.run do |config|
     :session_key => '_cells_examples_session',
     :secret      => 'a181ca86ca07da66ce0d7d5d6266f839e55b962274f80c650bce6f94df537d437bcbb67622c626ce4baecbfcbb6c4f8f80f176acbd044ffb679de97ca0e04616'
   }
+  
+  config.action_controller.cache_store = :memory_store
 end
