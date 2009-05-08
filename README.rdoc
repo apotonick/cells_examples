@@ -7,6 +7,11 @@
 
 Browse to <tt>localhost:3000</tt> and have fun.
 
+== Diving in
+
+Start with app/controllers/blog_controller.rb and study the cell classfiles referenced by #render_cell.
+
+
 == Contribute!
 
 If you think these examples are useless, feel free to add more descriptive stuff and send
@@ -14,3 +19,7 @@ us a pull request. We're looking forward to your work.
 
 Every contribution pulled into master will be rewarded with a beer at a Ruby/Rails 
 event (I PAY!).
+
+=== Contributors
+
+Michał Łomnicki       [mlomnicki]: VideoCell with AJAX-Form, model and cache sweepers (+3 beers).
