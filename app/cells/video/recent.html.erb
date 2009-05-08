@@ -1,0 +1,15 @@
+<div class="recentVideos">
+  <h3><%= @header %></h3>
+  <% @videos.each do |video| %>
+    <%= link_to image_tag( video.thumbnail_url ), video.url %>
+  <% end %>
+
+  <%= link_to_function( "Add youtube video" ) { |page| page[:new_video].show } %>
+
+  <% form_for Video.new, {}, :html => { :style => 'display: none' } do |f| %>
+    <%= f.label :url %><br />
+    <%= f.text_field :url %><br />
+    <%= f.submit %>
+  <% end %>
+
+</div>
