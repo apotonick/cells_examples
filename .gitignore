@@ -1,0 +1,16 @@
+config/database.yml
+*.cache
+*.log
+*.pid
+tmp/**/*
+.DS\_Store
+db/cstore/**
+doc/api
+doc/app
+doc/plugins
+coverage/*
+db/*.sqlite3
+*.tmproj
+Capfile
+doc/*.dot
+
