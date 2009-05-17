@@ -1,6 +1,11 @@
 <h1><%= t(:hello) %></h1>
 
-This is an example blog application for demonstration Rails Cells. Hey, you guys kept asking us for examples. Here they are, for your convenience.
+<p class="bodytext">
+    This is an example blog application for demonstrating Rails Cells.
+</p>
+<p class="bodytext">
+    <i>Hey, you guys kept asking us for examples. Here they are, for your convenience.</i>
+</p>
 
 
 <%= render_cell :post, :front_teaser %>
@@ -14,7 +19,7 @@ Click <%= link_to "here", :action => :all %> to see all posts.
 
 <%= render_cell :newsletter, :form %>
 
-<% content_for :right_menu do %>
+<% content_for :video_menu do %>
   <%= render_cell :video, :recent, :header => 'Recent videos' %>
 <% end %>
 

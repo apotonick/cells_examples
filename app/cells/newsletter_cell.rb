@@ -2,7 +2,7 @@ class NewsletterCell < Cell::Base
   
   def form
     
-    return render_state :register if valid_registration?
+    return render_state(:register) if valid_registration?
     
     nil
   end

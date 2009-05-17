@@ -5,11 +5,14 @@ h2 span {
 }
 
 #blogBody {
-  width: 600px;
+  width: 550px;
+  padding: 0 0 0 40;
   margin: 0 auto;
 }
 
 #body {
+  font-family: "Trebuchet MS", sans-serif;
+  font-size:11pt;
   width: 100%;
 }
 
@@ -25,6 +28,10 @@ h2 span {
   text-align: right;
   font-size: 9pt;
   color: grey;
+}
+
+.bodytext {
+  margin: 10 0 10 0;
 }
 
 #newsletterRegister {
@@ -44,3 +51,40 @@ h2 span {
   display: block;
 }
 
+
+.box {
+  /*border: 1px solid black;*/
+  
+  float: left;
+}
+
+
+#menu {
+  list-style-type: none;
+  padding: 0 0 0 0;
+}
+
+#menu li {
+  font-size: 18pt;
+  padding: 6 0 16 12;
+}
+
+#menu li.selected {
+ background-color: black;
+ /* background-color: #6ac3e5; */
+}
+#menu li a:hover {
+ text-decoration: underline;
+}
+#menu a {
+  color: #000000;
+  text-decoration: none;
+}
+
+#menu li.selected a {
+  color: #FFFFFF;
+}
+
+strong {
+  color: #843a18;
+}

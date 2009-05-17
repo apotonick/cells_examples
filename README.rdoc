@@ -2,7 +2,8 @@
 
   git clone git://github.com/apotonick/cells_examples.git
   cd cells_examples
-  script/plugin install git://github.com/apotonick/cells.git
+  git submodule init
+  git submodule update
   script/server
 
 Browse to <tt>localhost:3000</tt> and have fun.
@@ -23,3 +24,4 @@ event (I PAY!).
 === Contributors
 
 Michał Łomnicki       [mlomnicki]: VideoCell with AJAX-Form, model and cache sweepers (+3 beers).
+
