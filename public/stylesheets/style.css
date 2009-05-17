@@ -88,3 +88,22 @@ h2 span {
 strong {
   color: #843a18;
 }
+
+
+#displayCells {
+  padding: 6 0 16 12;
+  font-variant: small-caps;
+}
+
+h2 {
+    margin: 5 0 5 0 px;
+}
+
+.timestamp {
+    font-size: 0.80em;
+    font-style: italic;
+}
+
+.haloActive {
+	border: 1px solid blue;
+}

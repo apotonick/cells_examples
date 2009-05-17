@@ -1,8 +1,9 @@
 <html>
 <head>
-  <title>Nick's great blog!</title></head>
+  <title>I Am Nick's Raging Cells Blog!</title></head>
   <%= stylesheet_link_tag "style" %>
   <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag "cell_block" %>
 <body>
 
 <div id="body">
@@ -12,6 +13,9 @@
             <li<%=' class="selected"' if controller.controller_name == 'blog' && controller.action_name == 'index' -%>>
                 <a href="/" onfocus="blurLink(this);">Home</a>
             </li>
+            <li<%=' class="selected"' if controller.controller_name == 'blog' && controller.action_name == 'all' -%>>
+                <a href="/blog/all" onfocus="blurLink(this);">All Blog Posts</a>
+            </li>
             <li>
                 <a href="http://github.com/apotonick/cells_examples/tree/master" onfocus="blurLink(this);">Source Code</a>
             </li>
@@ -19,6 +23,7 @@
                 <a href="http://github.com/apotonick/cells/tree/master" onfocus="blurLink(this);">Cells Source</a>
             </li>
         </ul>
+        <div id="displayCells"><label for="halo">Display Cells</label> <input id="halo" type="checkbox" unchecked="true"/></div>
       </div>
     </div>
       

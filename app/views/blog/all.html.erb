@@ -1,0 +1,10 @@
+<h1><%= t(:blog_posts) %></h1>
+
+<p class="bodytext">This is an example of how to past a parameter into a cell for rendering.</p>
+
+<p class="bodytext">See the post_blurb method in app/cells/post_cell.rb for more details.</p>
+
+<% @posts.each do |post| -%>
+    <%= render_cell :post, :post_blurb, :post => post %>
+<% end -%>
+

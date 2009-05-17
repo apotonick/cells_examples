@@ -1,4 +1,4 @@
-<div class="recentVideos">
+<div class="cell_border recentVideos">
   <h3><%= @header %></h3>
   <% @videos.each do |video| %>
     <%= link_to image_tag( video.thumbnail_url ), video.url %>

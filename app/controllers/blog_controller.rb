@@ -12,5 +12,9 @@ class BlogController < ApplicationController
   
   def dashboard
   end
+  
+  def all
+    @posts = Post.all
+  end
 
 end

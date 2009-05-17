@@ -4,5 +4,4 @@
 <div class="timestamp">Posted on <%= @post.created_at.to_s(:short) %></div>
 <p><%= @post.body[0..45] %>...</p>
 <p class="more"><%= link_to "Read more...", :action => :read, :id => @post.id %></p>
-<hr>
 </div>

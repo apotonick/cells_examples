@@ -20,4 +20,9 @@ class PostCell < Cell::Base
     @count = Post.find(:all).size
     nil
   end
+  
+  def post_blurb
+    @post = @opts[:post]
+    nil
+  end
 end
