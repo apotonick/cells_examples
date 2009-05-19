@@ -24,4 +24,4 @@ event (I PAY!).
 === Contributors
 
 Michał Łomnicki       [mlomnicki]: VideoCell with AJAX-Form, model and cache sweepers (+3 beers).
-
+Winston Tsang         [rubyconsumer]: added a layout with navigation, a display-cells-borders button, and various JS libs (+3 beers).
