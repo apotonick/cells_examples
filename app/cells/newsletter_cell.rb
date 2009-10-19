@@ -1,23 +1,24 @@
 class NewsletterCell < Cell::Base
   
   def form
+    @receiver = NewsletterReceiver.new
     
-    return render_state(:register) if valid_registration?
+    if form_submitted?
+      @receiver.email = params[:newsletter_receiver][:email]
+      return render_state(:registered) if @receiver.save
+    end
     
-    nil
+    render
   end
   
-  def register
-    nil
+  
+  def registered
+    render
   end
   
-  def valid_registration?
-    return false unless params[:mode] == "register"
-    # At this point we're sure the form has been submitted.
-    # Now check if the input is valid.
-    return true if NewsletterReceiver.new(:email => params[:email]).save
-    
-    false
+  
+  def form_submitted?
+    params[:mode] == "register"
   end
   
 end
