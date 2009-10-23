@@ -10,18 +10,21 @@ Browse to <tt>localhost:3000</tt> and have fun.
 
 == Diving in
 
-Start with app/controllers/blog_controller.rb and study the cell classfiles referenced by #render_cell.
+Start with <tt>app/controllers/blog_controller.rb<tt> and study the cell class files referenced by #render_cell.
 
+* a basic cell to start with is in <tt>app/cells/post_cell.rb<tt>
+* forms in cells are revealed in <tt>app/cells/newsletter_cell.rb<tt>
+* simple caching is demonstrated in <tt>app/cells/debug_cell.rb<tt>
 
 == Contribute!
 
 If you think these examples are useless, feel free to add more descriptive stuff and send
 us a pull request. We're looking forward to your work.
 
-Every contribution pulled into master will be rewarded with a beer at a Ruby/Rails 
+Every contribution pulled into master will be rewarded with beer at a Ruby/Rails 
 event (I PAY!).
 
 === Contributors
 
-Michał Łomnicki       [mlomnicki]: VideoCell with AJAX-Form, model and cache sweepers (+3 beers).
-Winston Tsang         [rubyconsumer]: added a layout with navigation, a display-cells-borders button, and various JS libs (+3 beers).
+* Michał Łomnicki       [mlomnicki]: VideoCell with AJAX-Form, model and cache sweepers (+3 beers).
+* Winston Tsang         [rubyconsumer]: added a layout with navigation, a display-cells-borders button, and various JS libs (+3 beers).
