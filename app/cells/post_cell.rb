@@ -7,22 +7,22 @@ class PostCell < Cell::Base
     
     # When we return nil, the cell will automatically render the view corresponding
     # to the current state method, which would be 'cells/post/front_teaser.html.erb'.
-    nil
+    render
   end
   
   def list_categories
     @categories = Category.find(:all, :order => "name ASC")
-    nil
+    render
   end
   
   cache :count_posts
   def count_posts
     @count = Post.find(:all).size
-    nil
+    render
   end
   
   def post_blurb
     @post = @opts[:post]
-    nil
+    render
   end
 end

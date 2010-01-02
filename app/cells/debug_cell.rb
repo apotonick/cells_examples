@@ -5,6 +5,6 @@ class DebugCell < Cell::Base
   
   def show_cache_time
     @time = Time.now
-    nil
+    render
   end
 end

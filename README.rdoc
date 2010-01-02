@@ -10,11 +10,11 @@ Browse to <tt>localhost:3000</tt> and have fun.
 
 == Diving in
 
-Start with <tt>app/controllers/blog_controller.rb<tt> and study the cell class files referenced by #render_cell.
+Start with <tt>app/controllers/blog_controller.rb</tt> and study the cell class files referenced by #render_cell.
 
-* a basic cell to start with is in <tt>app/cells/post_cell.rb<tt>
-* forms in cells are revealed in <tt>app/cells/newsletter_cell.rb<tt>
-* simple caching is demonstrated in <tt>app/cells/debug_cell.rb<tt>
+* a basic cell to start with is in <tt>app/cells/post_cell.rb</tt>
+* forms in cells are revealed in <tt>app/cells/newsletter_cell.rb</tt>
+* simple caching is demonstrated in <tt>app/cells/debug_cell.rb</tt>
 
 == Contribute!
 

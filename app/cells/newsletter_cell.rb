@@ -5,7 +5,7 @@ class NewsletterCell < Cell::Base
     
     if form_submitted?
       @receiver.email = params[:newsletter_receiver][:email]
-      return render_state(:registered) if @receiver.save
+      return render(:state => :registered) if @receiver.save
     end
     
     render
