@@ -5,8 +5,6 @@ class PostCell < Cell::Base
     # just as you know it from controllers.
     @post = Post.newest
     
-    # When we return nil, the cell will automatically render the view corresponding
-    # to the current state method, which would be 'cells/post/front_teaser.html.erb'.
     render
   end
   
