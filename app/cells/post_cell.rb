@@ -8,6 +8,10 @@ class PostCell < Cell::Base
     render
   end
   
+  def render_post_headline(post)
+    "<h1>#{post.title}!!!</h1>"
+  end
+  
   def list_categories
     @categories = Category.find(:all, :order => "name ASC")
     render
