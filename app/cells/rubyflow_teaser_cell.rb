@@ -1,0 +1,2 @@
+class RubyflowTeaserCell < TeaserCell
+end

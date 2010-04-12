@@ -1,0 +1,19 @@
+<h1 id="rubyflow"><b>rubyflow</b> : my portal page</h1>
+
+<p>This is my rubyflow portal page.</p>
+
+<p>Currently, there are <%= @count %> posts I published.</p>
+
+<h3>
+<%= link_to "ActiveHelper for Rails!", "http://rubyflow.com/items/3714", :class => :rubyflow_link %>
+</h3>
+<h3>
+<%= link_to "Your 12 Minutes of Apotomo - new weekly tutorial series on stateful ruby widgets launched!", "http://rubyflow.com/items/3643", :class => :rubyflow_link %>
+</h3>
+<h3>
+...
+</h3>
+
+<div id="right_menu">
+  <%= render_cell :rubyflow_teaser, :box %>
+</div>

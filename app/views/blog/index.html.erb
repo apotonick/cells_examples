@@ -24,9 +24,10 @@ Click <%= link_to "here", :action => :all %> to see all posts.
 
 <%= render_cell :newsletter, :form %>
 
-<% content_for :video_menu do %>
-  <%= render_cell :video, :recent, :header => 'Recent videos' %>
-<% end %>
 
 <hr>
 <%= render_cell :debug, :show_cache_time %>
+
+<div id="right_menu">
+	<%= render_cell :video, :recent, :header => 'Recent videos' %>
+</div>
