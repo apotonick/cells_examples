@@ -1,0 +1,41 @@
+h2. Installation
+
+<pre>
+git clone git://github.com/apotonick/cells_examples.git
+cd cells_examples
+git submodule init
+git submodule update
+script/server
+</pre>
+
+Browse to @localhost:3000@ and have fun.
+
+h2. Diving in
+
+Start with @app/controllers/blog_controller.rb@ and study the cell class files referenced by #render_cell.
+
+* a basic cell to start with is in @app/cells/post_cell.rb@
+* forms in cells are revealed in @app/cells/newsletter_cell.rb@
+* simple caching is demonstrated in @app/cells/debug_cell.rb@
+
+h2. Caching
+
+Simple Caching is demonstrated in @app/cells/debug_cell.rb@.
+
+h2. View Inheritance
+
+The @app/cells/rubyflow_teaser_cell.rb@ on @/portal/rubyflow@ does use view inheritance. Read how it's done at "http://apotomo.de/2010/04/using-cells-view-inheritance-to-clean-up-your-views/":http://apotomo.de/2010/04/using-cells-view-inheritance-to-clean-up-your-views/
+
+
+h2. Contribute!
+
+If you think these examples are useless, feel free to add more descriptive stuff and send
+us a pull request. We're looking forward to your work.
+
+Every contribution pulled into master will be rewarded with beer at a Ruby/Rails 
+event (I PAY!).
+
+h3. Contributors
+
+* Michał Łomnicki       [mlomnicki]: VideoCell with AJAX-Form, model and cache sweepers (+3 beers).
+* Winston Tsang         [rubyconsumer]: added a layout with navigation, a display-cells-borders button, and various JS libs (+3 beers).

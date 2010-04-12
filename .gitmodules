@@ -1,3 +1,0 @@
-[submodule "vendor/plugins/cells"]
-	path = vendor/plugins/cells
-	url = git://github.com/apotonick/cells.git
