@@ -3,8 +3,6 @@ h2. Installation
 <pre>
 git clone git://github.com/apotonick/cells_examples.git
 cd cells_examples
-git submodule init
-git submodule update
 script/server
 </pre>
 
